@@ -4,6 +4,12 @@ import communityIcon from "@/assets/icons/community.png";
 import eventsIcon from "@/assets/icons/events.png";
 import classes from "./page.module.css";
 
+export const metadata = {
+  title: "Community — NextLevel Food",
+  description:
+    "Join NextLevel Food — share recipes, swap cooking tips, and connect with a global community of food lovers.",
+};
+
 export default function CommunityPage() {
   return (
     <>
