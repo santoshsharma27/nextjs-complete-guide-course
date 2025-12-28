@@ -10,9 +10,7 @@ export async function getAllNews() {
 
 export async function getNewsItem(slug) {
   const newsItem = db.prepare("SELECT * FROM news WHERE slug = ?").get(slug);
-
   await new Promise((resolve) => setTimeout(resolve, 2000));
-
   return newsItem;
 }
 
@@ -31,7 +29,6 @@ export async function getAvailableNewsYears() {
     .map((year) => year.year);
 
   await new Promise((resolve) => setTimeout(resolve, 2000));
-
   return years;
 }
 
@@ -52,7 +49,6 @@ export async function getNewsForYear(year) {
     .all(year);
 
   await new Promise((resolve) => setTimeout(resolve, 2000));
-
   return news;
 }
 
@@ -64,6 +60,5 @@ export async function getNewsForYearAndMonth(year, month) {
     .all(year, month);
 
   await new Promise((resolve) => setTimeout(resolve, 2000));
-
   return news;
 }
