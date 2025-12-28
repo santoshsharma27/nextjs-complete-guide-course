@@ -15,7 +15,7 @@ export default function PostForm({ action }) {
           <input type="text" id="title" name="title" />
         </p>
         <p className="form-control">
-          <label htmlFor="image">Image URL</label>
+          <label htmlFor="image">Image</label>
           <input
             type="file"
             accept="image/png, image/jpeg"
@@ -27,9 +27,9 @@ export default function PostForm({ action }) {
           <label htmlFor="content">Content</label>
           <textarea id="content" name="content" rows="5" />
         </p>
-        <p className="form-actions">
+        <span className="form-actions">
           <FormSubmit />
-        </p>
+        </span>
         {state.errors && (
           <ul className="form-errors">
             {state.errors.map((error) => (

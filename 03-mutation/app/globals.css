@@ -186,8 +186,9 @@ main {
 }
 
 .like-button {
-  background-color: transparent;
+  background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .like-button svg {
@@ -195,13 +196,9 @@ main {
   height: 1.5rem;
   fill: transparent;
   stroke: #e32195;
+  transition: fill 0.2s ease;
 }
 
-.like-button:hover svg,
 .liked .like-button svg {
   fill: #e32195;
-}
-
-.liked .like-button:hover svg {
-  fill: transparent;
 }
